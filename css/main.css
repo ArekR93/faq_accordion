@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.header {
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.faq-container {
+  margin: 2em;
+  padding: 1.5em;
+  border-radius: 15px;
+  position: absolute;
+  top: 100px;
+  max-width: 500px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+.faq-container .faq-header {
+  display: flex;
+  margin-bottom: 2em;
+}
+.faq-container .faq-header img {
+  margin-right: 2em;
+}
+.faq-container .faq-box {
+  padding-bottom: 1em;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.faq-container .faq-box .label-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.faq-container .faq-box .label-box .btn-box {
+  display: flex;
+}
+.faq-container .faq-box .label-box .btn-box .plus-btn, .faq-container .faq-box .label-box .btn-box .minus-btn {
+  transition: 1s;
+}
+.faq-container .faq-box .label-box .btn-box .deactive-btn {
+  display: none;
+}
+.faq-container .faq-box .label-box .label {
+  font-weight: bold;
+  margin-right: 1.5em;
+}
+.faq-container .faq-box .content {
+  display: none;
+  transition: 1s;
+}
+.faq-container .faq-box:last-child {
+  border-bottom: none;
+}
+.faq-container .faq-box.active .content {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+    width: 100%;
+    height: 300px;
+  }
+  .label {
+    transition: color 0.5s;
+  }
+  .label:hover {
+    color: #AD28EB;
+  }
+  .faq-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=main.css.map */
