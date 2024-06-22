@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-html-sass-js-6ikeSWrELo]
+- Live Site URL: [(https://arekr93.github.io/faq_accordion/)]
 
 ## My process
 
